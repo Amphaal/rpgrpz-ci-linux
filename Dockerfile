@@ -3,7 +3,7 @@ LABEL maintainer="guillaume.vara@gmail.com"
 
 USER devel
     #install build prerequisites (2 / 3) (prebuilt requisites)
-    RUN yay -S --noconfirm --noprogressbar --needed uasm qt-installer-framework
+    RUN yay -S --noconfirm --noprogressbar --needed uasm
 
 USER root
     #install requirements (some packages require to run some .exe)
