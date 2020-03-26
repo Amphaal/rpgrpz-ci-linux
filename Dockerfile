@@ -7,6 +7,10 @@ USER devel
 
 USER root
     #install requirements (some packages require to run some .exe)
-    RUN pacman -S --noconfirm --noprogressbar gstreamer gst-plugins-base gst-plugins-good qt miniupnpc
+    RUN pacman -S --noconfirm --noprogressbar qt
+    RUN pacman -S --noconfirm --noprogressbar gstreamer 
+    RUN pacman -S --noconfirm --noprogressbar gst-plugins-base
+    RUN pacman -S --noconfirm --noprogressbar gst-plugins-good
+    RUN pacman -S --noconfirm --noprogressbar miniupnpc
 
 CMD [ "/usr/bin/bash" ]
